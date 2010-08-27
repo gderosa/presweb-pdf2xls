@@ -1,0 +1,96 @@
+__ for Developers __
+
+  "Elaborazione foglio presenze"
+
+ 
+
+Deveoped and customized by Guido De Rosa <guidoderosa@gmail.com>
+for A.T.P. srl, Tito, PZ, ITALY
+
+A Perl program to estract informations from pdf reports generatìed by
+"Selesta Ingegneria"'s PresWeb(R) and put them in MS Excel stylesheets
+according to A.T.P.'s specifications. 
+
+In the program directory you will find
+
+* pdf2xls.pl main Perl script
+* pdf2xls.exe the above script "compiled" through PAR::Packer (pp)
+* A Microsoft Excel template file (*.xlt)
+* default configuration files festivi.conf, esclusi.conf; at first run
+  they are copied into a subdir of %APPDATA% if that environment variable
+  is set: this is useful on a multi-user environment, where an unprivileged
+  user is unauthorized to write inside %PROGRAMFILES% subdirectories.
+* a latsfile.dat; a datafile containing the path to the last (pdf) file opened; 
+  same considerations on multiuser environment hold.
+* pdf2text.exe from Xpdf project (sources included).
+
+festivi.conf holidays in MMDD or YYMMDD formats.
+ 
+
+----------------------------------------------------------------
+
+
+      Software requirements:
+ 
+
+· *pdftotext* from Xpdf 3.01 is already included.
+  DO NOT USE OTHER VERSIONS.
+
+· *ActivePerl* ( http://www.ActiveState.com/ActivePerl/ ). Raccomended
+  version is 5.8 (and maybe >5.8; it may work with 5.6 too, not tested...)
+  * includes 'Perl Package Manager'
+
+· *Microsoft Excel* (Microsoft Office). 2000 and 2003 Pro versions tested.
+
+· Windows OS. Program tested on XP Pro, it may work in othe Windows versions
+  but I didn't tested.
+
+· Perl Modules not included with ActivePerl (with repositories for your 'Perl Package Manager')
+  * Win32::WebBrowser         http://www.bribes.org/perl/ppm/
+  * PAR::Packer               http://theoryx5.uwinnipeg.ca/ppms/package.xml (to build an .exe with 'pp')
+
+ 
+     
+******   Building an .exe ****************
+
+Usually, pp's path is something like C:\Perl\site\bin\pp.(exe|bat|...)
+
+You may add [PERL INSTALL DIR]\site\bin to your PATH.
+
+
+>   pp -o pdf2xls.exe pdf2xls.pl
+
+test the executable
+
+>   pdf2xls.exe
+
+If it complains about missing modules use -M Missing::Module; when all is ok,
+build an executable without that horrible useless terminal window appearing
+when user "clicks" on the exe itself (i.e. embed wperl interpreter instead
+of perl)
+
+>   pp -g -o pdf2xls.exe pdf2xls.pl
+
+Your pdf2xls.exe is ready now; it doesn't need Active perl on the target machine, 
+but it still needs pdftotext.exe, *.conf, and lastfile.dat; Obviously, Documentaion
+Directory has to be included in your distribution; Xpdf sources are technically 
+optional.
+
+
+
+
+
+
+**** packaging ---> .msi 
+
+WAR Setup 3 http://products.jgaa.com/index.php?menu=436, which requires:
+WIX VERSION 3  http://wix.sourceforge.net/, which requires:
+.NET Framework 2.0 (see Microsoft sites)
+
+
+
+
+  
+
+
+

@@ -1,0 +1,43 @@
+ Elaborazione foglio presenze
+
+
+ pdf2xls.pl
+ Originally developed and customized for A.T.P. srl, Tito (PZ), ITALY
+ Copyright (C) 2006, Guido De Rosa <guido_derosa@libero.it>
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License, version 2, 
+    as published by the Free Software Foundation.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+-----------------------------------------------------------------------
+
+See GPL.txt for the whole text of the General Pubic License.
+
+-----------------------------------------------------------------------
+
+consulting and other services for this software, with or 
+without warranty, may be given, but they're not part of the software 
+itself. This is only an informational note, which doesn't alter the
+conditions of the GPL.
+
+----------------------------------------------------------------------
+
+pdftotext.exe is part of Xpdf. 
+Xpdf is Copyrigth (c) 2001-2003 Glyph & Cog, LLC and is free software,
+distributed under the GPL. The whole sources distribution, along 
+with pl2 patch, is included in xpdf/sources/ directory. Xpdf website 
+is at http://www.foolabs.com/xpdf/
+
+--------------------------------------------------------------------
+
+For any copyright issues, problems, or questions write to 
+<guidoderosa@gmail.com>

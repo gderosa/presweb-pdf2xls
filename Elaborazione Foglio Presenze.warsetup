@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WarSetup-Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" nextUniqueId="1806" projectName="Elaborazione Foglio Presenze" projectUuid="5db938b5-443c-4eb0-b908-d268817101e5" projectUpgradeUuid="9518a842-45fd-4c52-8476-1eb1a5497e33" projectVersion="1.2.0" projectOrganization="Guido De Rosa, Orazio Notarfrancesco" projectMustBeAdministratorToInstall="false" project64BitTarget="false" projectTargetName="Elaborazione Foglio Presenze-1.2" projectType="0" projectUserInterface="WixUI_Advanced">
+  <projectFeatures featureId="IDDC0870625A58E9DEC767DDE4C9270065" featureName="Elaborazione Foglio Presenze" featureDescription="Elaborazione Foglio Presenze" configurableDirectory="APPLICATIONFOLDER" configurableDirectoryDefaultPath="[ProjectName]" enableInDefaultInstall="true" enableInMinimalInstall="true" excludeFromBuild="false">
+    <childFeatures featureId="PROGRAM" featureName="Program" featureDescription="The Main Executable" enableInDefaultInstall="true" enableInMinimalInstall="true" excludeFromBuild="false">
+      <components componentId="ID1001" componentGuid="83579373-0470-4db3-bae7-660c84885115">
+        <componentFiles fileId="ID_08c4d713_75c6_4c71_8f9f_cdf23bf92eda" srcName="atp.xlt" srcDirectory=".\atp1.2" dstName="atp.xlt" dstPath="" isComModule="false" typelibGuid="" menuName="atp" shortcutInProgramFilesMenu="false" shortcutOnDesktop="false" shortcutInQuickLaunch="false" shortcutWorkingDirectory="" shortcutCommandArguments="" shortcutDescription="">
+          <service StartWhenInstalled="true" Remove="both" id="ID1000" isService="false" userAccount="" userPassword="" cmdLineArguments="" errorControl="normal" interactive="false" loadOrderGroup="" serviceName="" startMode="auto" vital="true" />
+        </componentFiles>
+      </components>
+      <components componentId="ID1003" componentGuid="a278d865-5de5-4dd0-87ad-37e48c0e4510">
+        <componentFiles fileId="ID_dc88ecc4_050e_4e81_a60a_054153798fb0" srcName="esclusi.conf" srcDirectory=".\atp1.2" dstName="esclusi.conf" dstPath="" isComModule="false" typelibGuid="" menuName="esclusi" shortcutInProgramFilesMenu="false" shortcutOnDesktop="false" shortcutInQuickLaunch="false" shortcutWorkingDirectory="" shortcutCommandArguments="" shortcutDescription="">
+          <service StartWhenInstalled="true" Remove="both" id="ID1002" isService="false" userAccount="" userPassword="" cmdLineArguments="" errorControl="normal" interactive="false" loadOrderGroup="" serviceName="" startMode="auto" vital="true" />
+        </componentFiles>
+      </components>
+      <components componentId="ID1005" componentGuid="86e15f67-6a3a-4a80-9543-a9123eb25501">
+        <componentFiles fileId="ID_61326c81_b347_4052_b5f2_140574958299" srcName="festivi.conf" srcDirectory=".\atp1.2" dstName="festivi.conf" dstPath="" isComModule="false" typelibGuid="" menuName="festivi" shortcutInProgramFilesMenu="false" shortcutOnDesktop="false" shortcutInQuickLaunch="false" shortcutWorkingDirectory="" shortcutCommandArguments="" shortcutDescription="">
+          <service StartWhenInstalled="true" Remove="both" id="ID1004" isService="false" userAccount="" userPassword="" cmdLineArguments="" errorControl="normal" interactive="false" loadOrderGroup="" serviceName="" startMode="auto" vital="true" />
+        </componentFiles>
+      </components>
+      <components componentId="ID1007" componentGuid="2ff68830-7c20-4af2-9818-268bc745758d">
+        <componentFiles fileId="ID_a26b4ef3_3f94_416e_92b1_1e675a6ef31d" srcName="lastfile.dat" srcDirectory=".\atp1.2" dstName="lastfile.dat" dstPath="" isComModule="false" typelibGuid="" menuName="lastfile" shortcutInProgramFilesMenu="false" shortcutOnDesktop="false" shortcutInQuickLaunch="false" shortcutWorkingDirectory="" shortcutCommandArguments="" shortcutDescription="">
+          <service StartWhenInstalled="true" Remove="both" id="ID1006" isService="false" userAccount="" userPassword="" cmdLineArguments="" errorControl="normal" interactive="false" loadOrderGroup="" serviceName="" startMode="auto" vital="true" />
+        </componentFiles>
+      </components>
+      <components componentId="ID1009" componentGuid="d8b7b878-08be-4b81-af06-464f664735f6">
+        <componentFiles fileId="ID_edfe29c5_8541_406b_a2a8_042dad12e54e" srcName="pdf2xls.exe" srcDirectory=".\atp1.2" dstName="pdf2xls.exe" dstPath="" isComModule="false" typelibGuid="" menuName="Elaborazione Foglio Presenze" shortcutInProgramFilesMenu="true" shortcutOnDesktop="true" shortcutInQuickLaunch="false" shortcutWorkingDirectory="[APPLICATIONFOLDER]" shortcutCommandArguments="" shortcutDescription="">
+          <service StartWhenInstalled="true" Remove="both" id="ID1008" isService="false" userAccount="" userPassword="" cmdLineArguments="" errorControl="normal" interactive="false" loadOrderGroup="" serviceName="" startMode="auto" vital="true" />
+        </componentFiles>
+      </components>
+      <components componentId="ID1011" componentGuid="bf41cc37-5256-4a9d-bdf0-72270c7d3bfb">
+        <componentFiles fileId="ID_31910944_0a5c_476b_b757_834aa3340d1a" srcName="pdftotext.exe" srcDirectory=".\atp1.2" dstName="pdftotext.exe" dstPath="" isComModule="false" typelibGuid="" menuName="pdftotext" shortcutInProgramFilesMenu="false" shortcutOnDesktop="false" shortcutInQuickLaunch="false" shortcutWorkingDirectory="" shortcutCommandArguments="" shortcutDescription="">
+          <service StartWhenInstalled="true" Remove="both" id="ID1010" isService="false" userAccount="" userPassword="" cmdLineArguments="" errorControl="normal" interactive="false" loadOrderGroup="" serviceName="" startMode="auto" vital="true" />
+        </componentFiles>
+      </components>
+      <defaultInstallMode>3</defaultInstallMode>
+    </childFeatures>
+    <childFeatures featureId="DOCUMENTATION" featureName="Documentation" featureDescription="The documentation" enableInDefaultInstall="true" enableInMinimalInstall="true" excludeFromBuild="false">
+      <components componentId="ID1014" componentGuid="a5c24aca-d4f6-4e85-9926-ce79ac708e40">
+        <componentFiles fileId="ID_bc1804ee_ad47_4af5_91e2_c7ea0e9f46db" srcName="help.html" srcDirectory=".\atp1.2\Documentation" dstName="help.html" dstPath="Documentation" isComModule="false" typelibGuid="" menuName="Help" shortcutInProgramFilesMenu="true" shortcutOnDesktop="false" shortcutInQuickLaunch="false" shortcutWorkingDirectory="" shortcutCommandArguments="" shortcutDescription="">
+          <service StartWhenInstalled="true" Remove="both" id="ID1013" isService="false" userAccount="" userPassword="" cmdLineArguments="" errorControl="normal" interactive="false" loadOrderGroup="" serviceName="" startMode="auto" vital="true" />
+        </componentFiles>
+      </components>
+      <components componentId="ID1016" componentGuid="0a01f273-52b1-4315-afe8-5c726656a356">
+        <componentFiles fileId="ID_a9cbe30a_bd80_4d2b_a83f_957af99fc0a8" srcName="tech.txt" srcDirectory=".\atp1.2\Documentation" dstName="tech.txt" dstPath="Documentation" isComModule="false" typelibGuid="" menuName="Developers' info" shortcutInProgramFilesMenu="true" shortcutOnDesktop="false" shortcutInQuickLaunch="false" shortcutWorkingDirectory="" shortcutCommandArguments="" shortcutDescription="">
+          <service StartWhenInstalled="true" Remove="both" id="ID1015" isService="false" userAccount="" userPassword="" cmdLineArguments="" errorControl="normal" interactive="false" loadOrderGroup="" serviceName="" startMode="auto" vital="true" />
+        </componentFiles>
+      </components>
+      <components componentId="ID1018" componentGuid="6fdd53dd-b678-4024-b9d1-6259ac332321">
+        <componentFiles fileId="ID_9faba967_0186_4188_891d_0bdbcaff0258" srcName="Copyright.txt" srcDirectory=".\atp1.2\Documentation" dstName="Copyright.txt" dstPath="Documentation" isComModule="false" typelibGuid="" menuName="Copyright" shortcutInProgramFilesMenu="true" shortcutOnDesktop="false" shortcutInQuickLaunch="false" shortcutWorkingDirectory="" shortcutCommandArguments="" shortcutDescription="">
+          <service StartWhenInstalled="true" Remove="both" id="ID1017" isService="false" userAccount="" userPassword="" cmdLineArguments="" errorControl="normal" interactive="false" loadOrderGroup="" serviceName="" startMode="auto" vital="true" />
+        </componentFiles>
+      </components>
+      <components componentId="ID1020" componentGuid="8861d017-7b76-4d98-be5f-98f49dd81232">
+        <componentFiles fileId="ID_777935b6_7a8f_459a_a1ef_9359ba855bfd" srcName="gpl.txt" srcDirectory=".\atp1.2\Documentation" dstName="gpl.txt" dstPath="Documentation" isComModule="false" typelibGuid="" menuName="License" shortcutInProgramFilesMenu="true" shortcutOnDesktop="false" shortcutInQuickLaunch="false" shortcutWorkingDirectory="" shortcutCommandArguments="" shortcutDescription="">
+          <service StartWhenInstalled="true" Remove="both" id="ID1019" isService="false" userAccount="" userPassword="" cmdLineArguments="" errorControl="normal" interactive="false" loadOrderGroup="" serviceName="" startMode="auto" vital="true" />
+        </componentFiles>
+      </components>
+      <defaultInstallMode>3</defaultInstallMode>
+    </childFeatures>
+    <childFeatures featureId="ID551C0954A3522B6A5BDBB13EB759B29F" featureName="Development files" featureDescription="perl (.pl) files" enableInDefaultInstall="true" enableInMinimalInstall="true" excludeFromBuild="false">
+      <components componentId="ID1609" componentGuid="566c232e-e270-445e-8356-cd87015b517b">
+        <componentFiles fileId="ID_b6360160_31a3_439c_bd46_ad60e08052cc" srcName="pdf2xls.pl" srcDirectory=".\atp1.2" dstName="pdf2xls.pl" dstPath="" isComModule="false" typelibGuid="" menuName="pdf2xls" shortcutInProgramFilesMenu="false" shortcutOnDesktop="false" shortcutInQuickLaunch="false" shortcutWorkingDirectory="" shortcutCommandArguments="" shortcutDescription="">
+          <service StartWhenInstalled="true" Remove="both" id="ID1608" isService="false" userAccount="" userPassword="" cmdLineArguments="" errorControl="normal" interactive="false" loadOrderGroup="" serviceName="" startMode="auto" vital="true" />
+        </componentFiles>
+      </components>
+      <defaultInstallMode>3</defaultInstallMode>
+    </childFeatures>
+    <defaultInstallMode>0</defaultInstallMode>
+  </projectFeatures>
+  <projectFeatures featureId="ID5F8220D27BA847771BC0937A46FEFD6B" featureName="Xpdf sources" featureDescription="They will be available in  (INSTALL_DIR)\xpdf-src" enableInDefaultInstall="false" enableInMinimalInstall="false" excludeFromBuild="false">
+    <components componentId="ID1233" componentGuid="ec2cf901-9dae-4171-aa26-876a2a0a0c58">
+      <componentFiles fileId="ID_6c0047d6_9a73_41d2_96ad_9402404bc7e1" srcName="xpdf-3.01.tar.gz" srcDirectory=".\atp1.2\xpdf-src" dstName="xpdf-3.01.tar.gz" dstPath="xpdf-src" isComModule="false" typelibGuid="" menuName="Xpdf sources - xpdf-3.01.tar.gz" shortcutInProgramFilesMenu="false" shortcutOnDesktop="false" shortcutInQuickLaunch="false" shortcutWorkingDirectory="" shortcutCommandArguments="" shortcutDescription="">
+        <service StartWhenInstalled="true" Remove="both" id="ID1232" isService="false" userAccount="" userPassword="" cmdLineArguments="" errorControl="normal" interactive="false" loadOrderGroup="" serviceName="" startMode="auto" vital="true" />
+      </componentFiles>
+    </components>
+    <components componentId="ID1235" componentGuid="ddfe275d-2895-4e65-8536-d9e49df3bf99">
+      <componentFiles fileId="ID_017df7c4_627c_401d_94f4_63d8feebd5cf" srcName="xpdf-3.01pl2.patch" srcDirectory=".\atp1.2\xpdf-src" dstName="xpdf-3.01pl2.patch" dstPath="xpdf-src" isComModule="false" typelibGuid="" menuName="Xpdf sources - xpdf-3.01pl2.patch" shortcutInProgramFilesMenu="false" shortcutOnDesktop="false" shortcutInQuickLaunch="false" shortcutWorkingDirectory="" shortcutCommandArguments="" shortcutDescription="">
+        <service StartWhenInstalled="true" Remove="both" id="ID1234" isService="false" userAccount="" userPassword="" cmdLineArguments="" errorControl="normal" interactive="false" loadOrderGroup="" serviceName="" startMode="auto" vital="true" />
+      </componentFiles>
+    </components>
+    <defaultInstallMode>0</defaultInstallMode>
+  </projectFeatures>
+  <buildNoValidiation>false</buildNoValidiation>
+  <projectInstallForCurrentOrAllUsers>2</projectInstallForCurrentOrAllUsers>
+  <License>
+    <System>true</System>
+    <Name>GNU General Public License (GPL) 2.0</Name>
+  </License>
+  <projectProperties TopBanner="" BigBanner="" ExclamationIcon="" InfoIcon="" NewIcon="" UpIcon="" VS2003Integration="VS2003_INTEGRATION" VS2005Integration="VS2005_INTEGRATION" UseRelativePaths="true" UseWixUI_ErrorProgressText="true" UseWixUI="true" Codepage="1252" ProductLanguage="1033" AlwaysMajorUpgrade="true" Compress="true" BuildTarget="true" PublisherUrl="" SupportContact="" SupportUrl="" SupportPhone="" ReadMeFile="" UpdateUrl="" Comments="" Icon="" EmbedCab="true" MaxCabSize="0" CabCompressionLevel="mszip">
+    <UiCultures Name="en-US" Enabled="true" />
+    <UiCultures Name="de-de" Enabled="false" />
+    <UiCultures Name="es-es" Enabled="false" />
+    <UiCultures Name="nl-nl" Enabled="false" />
+  </projectProperties>
+</WarSetup-Project>
