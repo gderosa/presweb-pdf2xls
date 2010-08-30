@@ -293,7 +293,7 @@ sub status {
         # per i giorni feriali; no straord. festvi (SE IL DIPENDENTE NON HA
         # A MATRICOLA O CODICE => E' STATO ASSUNTO DURANTE IL MESE (O PORZIONE DI 
         # MESE...) E LO SI ESClUDE DAL CALCOLO PER EVITARE DI ATTRIBUIRGLI ORE NON
-        # LAVORATE: COMPARIRà UNA RIGA BIANCA...)
+        # LAVORATE: COMPARIRA' UNA RIGA BIANCA...)
         if ( has_code($worker_count) ) {
             set_default_worker_results();
         }
@@ -584,7 +584,7 @@ sub make_Excel {
         $textbox->insert('end',"\n
 Creazione del foglio Excel... 
         
-A seconda della velocità del computer
+A seconda della velocita' del computer
 questa operazione potrebbe richiedere 
 alcuni secondi...\n");
         $textbox->yview('-pickplace','end');
