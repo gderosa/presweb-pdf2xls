@@ -322,11 +322,11 @@ sub status {
         malattia($1);
         return 'MAL';
     }
-    if ($line =~ m/^\s{0,2}MATO\s+(\S.+\S)[\s\r]*$/) { # maternità ore 
+    if ($line =~ m/^\s{0,2}MATO\s+(\S.+\S)[\s\r]*$/) { # maternita' ore 
         maternita_ore($1);
         return 'MATO';
     }
-    if ($line =~ m/^\s{0,2}MATG\s+(\S.+\S)[\s\r]*$/) { # maternità giorni
+    if ($line =~ m/^\s{0,2}MATG\s+(\S.+\S)[\s\r]*$/) { # maternita' giorni
         maternita_giorni($1);
         return 'MATG';
     }
